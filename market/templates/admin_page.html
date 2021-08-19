@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>Users registrated : </h3>
+    {% if users %}
+        <ul>
+            {% for user in users %}
+                <li> {{user.name}} </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+<!--    {{users}}-->
+{% endblock %}
